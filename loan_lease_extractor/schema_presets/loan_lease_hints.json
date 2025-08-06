@@ -1,0 +1,53 @@
+{
+  "borrower_name": [
+    "Borrower\\s*Name[:\\-]\\s*(?P<val>.+)"
+  ],
+  "lessor_name": [
+    "(Lessor|Landlord)\\s*Name[:\\-]\\s*(?P<val>.+)"
+  ],
+  "lessee_name": [
+    "(Lessee|Tenant)\\s*Name[:\\-]\\s*(?P<val>.+)"
+  ],
+  "loan_number": [
+    "(Loan|Account)\\s*(No\\.?|Number)[:\\-]\\s*(?P<val>[A-Z0-9\\-]+)"
+  ],
+  "lease_number": [
+    "(Lease)\\s*(No\\.?|Number)[:\\-]\\s*(?P<val>[A-Z0-9\\-]+)"
+  ],
+  "loan_amount": [
+    "(Loan|Principal)\\s*Amount[:\\-]\\s*\\$?(?P<val>[\\d,]+(?:\\.\\d{2})?)"
+  ],
+  "security_deposit": [
+    "(Security\\s*Deposit)[:\\-]\\s*\\$?(?P<val>[\\d,]+(?:\\.\\d{2})?)"
+  ],
+  "rent_amount": [
+    "(Monthly\\s*Rent|Base\\s*Rent)[:\\-]\\s*\\$?(?P<val>[\\d,]+(?:\\.\\d{2})?)"
+  ],
+  "interest_rate": [
+    "(Interest\\s*Rate|APR)[:\\-]\\s*(?P<val>\\d+(?:\\.\\d+)?\\s*%?)"
+  ],
+  "effective_date": [
+    "(Effective|Start)\\s*Date[:\\-]\\s*(?P<val>\\d{1,2}[\\/\\-]\\d{1,2}[\\/\\-]\\d{2,4}|[A-Za-z]{3,9}\\s+\\d{1,2},\\s+\\d{4})"
+  ],
+  "maturity_date": [
+    "(Maturity|End)\\s*Date[:\\-]\\s*(?P<val>\\d{1,2}[\\/\\-]\\d{1,2}[\\/\\-]\\d{2,4}|[A-Za-z]{3,9}\\s+\\d{1,2},\\s+\\d{4})"
+  ],
+  "payment_frequency": [
+    "Payment\\s*Frequency[:\\-]\\s*(?P<val>(Monthly|Quarterly|Bi-Weekly|Weekly|Annual))"
+  ],
+  "monthly_payment": [
+    "(Monthly\\s*Payment|EMI)[:\\-]\\s*\\$?(?P<val>[\\d,]+(?:\\.\\d{2})?)"
+  ],
+  "guarantor_name": [
+    "(Guarantor|Surety)\\s*Name[:\\-]\\s*(?P<val>.+)"
+  ],
+  "property_address": [
+    "(Property|Premises)\\s*Address[:\\-]\\s*(?P<val>.+)"
+  ],
+  "termination_clause": [
+    "(Early\\s*Termination|Termination)[:\\-]\\s*(?P<val>.+)"
+  ],
+  "late_fee": [
+    "(Late\\s*Fee)[:\\-]\\s*\\$?(?P<val>[\\d,]+(?:\\.\\d{2})?)"
+  ]
+}

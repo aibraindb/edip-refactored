@@ -1,0 +1,43 @@
+# Canonical field dictionary for Lease/Loan agreements
+fields:
+  agreement_type:
+    type: enum
+    required: true
+    enum: ["Lease Agreement", "Loan Agreement"]
+    aliases: ["Agreement Type"]
+  envelope_id:
+    type: string
+    required: false
+    aliases: ["DocuSign Envelope ID", "Envelope ID"]
+  lessor_name:
+    type: string
+    required: true
+    aliases: ["Lessor", "Owner", "Creditor"]
+  lessee_name:
+    type: string
+    required: true
+    aliases: ["Lessee", "Customer", "Borrower"]
+  agreement_date:
+    type: date
+    required: true
+    aliases: ["Agreement Date", "Dated"]
+  term_months:
+    type: integer
+    required: false
+    aliases: ["Term", "Lease Term"]
+  total_amount_financed:
+    type: money
+    required: false
+    aliases: ["Total Amount Financed", "Amount Financed", "Total Amount"]
+  monthly_payment:
+    type: money
+    required: false
+    aliases: ["Monthly Payment", "Payment Amount", "Rent"]
+  serial_number:
+    type: string
+    required: false
+    aliases: ["Serial Number", "Serial No.", "S/N"]
+  model_number:
+    type: string
+    required: false
+    aliases: ["Model Number", "Model No.", "Model"]
